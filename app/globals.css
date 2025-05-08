@@ -2,7 +2,10 @@
 
 @theme {
     --color-custom-red: rgb(186, 74, 73);
-    --color-custom-light: rgb(194, 109, 104);
+    --color-custom-blue: rgb(57, 112, 151);
+    --color-custom-turquoise: rgb(56, 134, 138);
+    --color-custom-light: rgba(255, 255, 255, 0.2);
+    --color-custom-dark: rgba(0, 0, 0, 0.2);
 }
 
 @font-face {

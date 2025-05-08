@@ -1,20 +1,24 @@
 "use client";
 
+import { useState } from "react";
 interface TimerControlsProps {
     onStart: () => void;
     onPause: () => void;
-    onReset: () => void;
+    onSkip: () => void;
     isRunning: boolean;
 }
+
+
 
 export default function TimerControl({
     onStart,
     onPause,
-    onReset,
+    onSkip,
     isRunning,
 }: TimerControlsProps) {
+    
     return (
-        <div className="flex gap-4 bg-gray-700 p-4 rounded-lg shadow-xl">
+        <div className="flex justify-center gap-4 bg-gray-700 p-4 m-2 rounded-lg shadow-xl">
             {isRunning ? (
                 <button
                     onClick={onPause}
@@ -31,7 +35,7 @@ export default function TimerControl({
                 </button>
             )}
             <button
-                onClick={onReset}
+                onClick={onSkip}
                 className="bg-red-500 text-white px-4 py-2 rounded-md"
             >
                 Reset

@@ -12,7 +12,9 @@ export default function TimerDisplay({ time }: TimerDisplayProps) {
     };
 
     return (
-        <div className="text-center text-8xl font-mono p-4 rounded-lg shadow-xl bg-gray-800 text-white">
+        <div
+            className={`text-center text-8xl p-4 m-2 rounded-lg shadow-xl bg-gray-800 text-white`}
+        >
             {formatTime(time)}
         </div>
     );
