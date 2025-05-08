@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --color-custom-red: rgb(186, 74, 73);
+    --color-custom-light: rgb(194, 109, 104);
+}
+
+@font-face {
+    font-family: "default";
+    src: url("../public/fonts/arialrounded.ttf");
+}
